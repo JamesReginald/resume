@@ -14,6 +14,25 @@
 
     <!-- custom css-->
     <link rel="stylesheet" href="../css/index.css" type="text/css" />
+
+    <!-- owl carousel css-->
+    <link
+      rel="stylesheet"
+      href="../vendor/owl-carousel/css/owl.carousel.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../vendor/owl-carousel/css/owl.theme.default.min.css"
+      type="text/css"
+    />
+
+    <!-- Magnific Popup css-->
+    <link
+      rel="stylesheet"
+      href="../vendor/Popupmaster/dist/magnific-popup.css"
+      type="text/css"
+    />
   </head>
   <body>
     <!--=================Start header====================-->
@@ -63,6 +82,7 @@
 
     <!--=================Start main====================-->
     <main class="site-main">
+     
       <!--=================Start Banner Area====================-->
       <section class="site-banner">
         <div class="container">
@@ -89,13 +109,17 @@
               </div>
             </div>
             <div class="col-lg-6 col-md-12 banner-image">
-              <img class="img-fluid" src="../img/images.jfif" alt="don't panic" />
+              <img
+                class="img-fluid"
+                src="../img/images.jfif"
+                alt="don't panic"
+              />
             </div>
           </div>
         </div>
       </section>
       <!--=================End Banner Area====================-->
-
+      <canvas class="canvas" id="scene"></canvas>
       <!--=================Start About Area====================-->
       <section class="about-area">
         <div class="container-fluid">
@@ -217,7 +241,7 @@
               <h1 class="text-uppercase title-text">Service Offers</h1>
               <p class="para">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
           </div>
@@ -226,13 +250,16 @@
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="services">
                   <div class="services-img text-center py-4">
-                    <img src="../img/logo_20.png" alt="logo">
+                    <img src="../img/logo_20.png" alt="logo" />
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-font">Wp developer</h5>
+                    <h5 class="card-title text-uppercase font-font">
+                      Wp developer
+                    </h5>
                     <p class="card-text text-secondary">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
                     </p>
                   </div>
                 </div>
@@ -240,13 +267,16 @@
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="services">
                   <div class="services-img text-center py-4">
-                    <img src="../img/logo_20.png" alt="logo">
+                    <img src="../img/logo_20.png" alt="logo" />
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-font">Wp developer</h5>
+                    <h5 class="card-title text-uppercase font-font">
+                      Wp developer
+                    </h5>
                     <p class="card-text text-secondary">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
                     </p>
                   </div>
                 </div>
@@ -254,14 +284,16 @@
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="services">
                   <div class="services-img text-center py-4">
-                    <img src="../img/logo_20.png" alt="logo">
+                    <img src="../img/logo_20.png" alt="logo" />
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-font">Wp developer</h5>
+                    <h5 class="card-title text-uppercase font-font">
+                      Wp developer
+                    </h5>
                     <p class="card-text text-secondary">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                      
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
                     </p>
                   </div>
                 </div>
@@ -269,13 +301,16 @@
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="services">
                   <div class="services-img text-center py-4">
-                    <img src="../img/logo_20.png" alt="logo">
+                    <img src="../img/logo_20.png" alt="logo" />
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-font">Wp developer</h5>
+                    <h5 class="card-title text-uppercase font-font">
+                      Wp developer
+                    </h5>
                     <p class="card-text text-secondary">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
                     </p>
                   </div>
                 </div>
@@ -294,7 +329,9 @@
             <h1 class="text-uppercase title-h1">Quality Work</h1>
           </div>
           <div class="button-group">
-            <button type="button" class="acive" id="btn1">All</button>
+            <button type="button" class="acive" data-filter="*" id="btn1">
+              All
+            </button>
             <button type="button" data-filter=".popular">Popular</button>
             <button type="button" data-filter=".latest">Latest</button>
             <button type="button" data-filter=".following">Following</button>
@@ -305,7 +342,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
               <div class="our-project">
                 <div class="img">
-                  <img src="../img/panic.png" alt="portfolio">
+                  <a class="test-popup-link" href="../img/panic.png">
+                    <img src="../img/panic.png" alt="portfolio" />
+                  </a>
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Minimal Design</h4>
@@ -316,7 +355,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
               <div class="our-project">
                 <div class="img">
-                  <img src="../img/panic.png" alt="portfolio-2">
+                  <a class="test-popup-link" href="../img/panic.png">
+                    <img src="../img/panic.png" alt="portfolio" />
+                  </a>
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">TradeBot</h4>
@@ -327,7 +368,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item upcomming">
               <div class="our-project">
                 <div class="img">
-                  <img src="../img/panic.png" alt="portfolio">
+                  <a class="test-popup-link" href="../img/panic.png">
+                    <img src="../img/panic.png" alt="portfolio" />
+                  </a>
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Minimal Design</h4>
@@ -338,7 +381,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item upcomming">
               <div class="our-project">
                 <div class="img">
-                  <img src="../img/logo_20.png" alt="portfolio">
+                  <a class="test-popup-link" href="../img/panic.png">
+                    <img src="../img/panic.png" alt="portfolio" />
+                  </a>
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Minimal Design</h4>
@@ -349,7 +394,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
               <div class="our-project">
                 <div class="img">
-                  <img src="../img/logo_20.png" alt="portfolio">
+                  <a class="test-popup-link" href="../img/panic.png">
+                    <img src="../img/panic.png" alt="portfolio" />
+                  </a>
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Minimal Design</h4>
@@ -361,7 +408,107 @@
         </div>
       </section>
       <!--=================End Project Area==================-->
-   
+      <!--=================Start About me Area================-->
+      <section class="about-area">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+              <div class="about-title">
+                <h1 class="text-uppercase title-h1">About me</h1>
+                <p class="para">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Maiores ratione quisquam voluptate assumenda sed aliquam,
+                  animi iusto voluptas aliquid id.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container carousel py-lg-5">
+          <div class="owl-carousel owl-theme">
+            <div class="client row">
+              <div class="col-lg-4 col-md-12 client-img">
+                <img src="../img/logo_20.png" alt="img" class="img-fluid" />
+              </div>
+              <div class="col-lg-8 col-md-12 about-client">
+                <h4 class="text-uppercase">Jimmie van vliet</h4>
+                <p class="para">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptas, ipsa optio autem tempora possimus, nesciunt error
+                  necessitatibus eius mollitia, earum inventore commodi cum
+                  perspiciatis! Fugiat veritatis harum velit optio nulla minima
+                  nam numquam, adipisci quo modi eius. Aliquam ab dolores,
+                  ipsum, optio blanditiis reiciendis, dolor unde fugit quidem
+                  aspernatur eveniet!
+                </p>
+              </div>
+            </div>
+            <div class="client row">
+              <div class="col-lg-4 col-md-12 client-img">
+                <img src="../img/logo_20.png" alt="img" class="img-fluid" />
+              </div>
+              <div class="col-lg-8 col-md-12 about-client">
+                <h4 class="text-uppercase">gerard eckdom</h4>
+                <p class="para">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptas, ipsa optio autem tempora possimus, nesciunt error
+                  necessitatibus eius mollitia, earum inventore commodi cum
+                  perspiciatis! Fugiat veritatis harum velit optio nulla minima
+                  nam numquam, adipisci quo modi eius. Aliquam ab dolores,
+                  ipsum, optio blanditiis reiciendis, dolor unde fugit quidem
+                  aspernatur eveniet!
+                </p>
+              </div>
+            </div>
+            <div class="client row">
+              <div class="col-lg-4 col-md-12 client-img">
+                <img src="../img/logo_20.png" alt="img" class="img-fluid" />
+              </div>
+              <div class="col-lg-8 col-md-12 about-client">
+                <h4 class="text-uppercase">frenkie de jong</h4>
+                <p class="para">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptas, ipsa optio autem tempora possimus, nesciunt error
+                  necessitatibus eius mollitia, earum inventore commodi cum
+                  perspiciatis! Fugiat veritatis harum velit optio nulla minima
+                  nam numquam, adipisci quo modi eius. Aliquam ab dolores,
+                  ipsum, optio blanditiis reiciendis, dolor unde fugit quidem
+                  aspernatur eveniet!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--=================End About me Area==================-->
+      <!--=================Start Subcribe me Area==================-->
+
+      <section class="subscribe-us-area">
+        <div class="container subscribe">
+          <div class="row">
+            <div class="col-lg-12 text-center subscribe-title">
+              <h4 class="text-uppercase">Get Update from anywhere</h4>
+              <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nulla.</p>
+            </div>
+          </div>
+          <div class="d-sm-flex justify-content-center">
+            <form action="" class="w-50">
+              <div class="row d-flex flex-row flex-wrap">
+                <div class="col input-textbox">
+                  <input type="text" id="txtemail" class="form-control" placeholder="Email">
+                </div>
+                <div class="col">
+                  <div class="btn-submit">
+                    <button type="submit" class="btn btn-success float-right">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--=================End Subscribe me Area==================-->
     </main>
     <!--=================End main====================-->
 
@@ -371,10 +518,18 @@
     <!--Bootstrap js File-->
     <script src="../js/bootstrap.min.js"></script>
 
-    <!--Custom js File-->
-    <script src="../js/main.js"></script>
-
     <!--isotope library js File-->
     <script src="../vendor/isotope/isope.min.js"></script>
+
+    <!--Custom js File-->
+    <script src="../vendor/Popupmaster/dist/jquery.magnific-popup.min.js"></script>
+
+    <!--owl library js File-->
+    <script src="../vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    
+    <!--Custom js File-->
+    <script src="../js/3dCanvas.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

@@ -70,7 +70,9 @@
 
 
 /* end Banner area */
-
+.site-main .canvas{
+    position: fixed;
+}
 /*Start About Area*/
 
 .site-main .about-area{
@@ -199,4 +201,75 @@ filter:brightness(0.15);
     font: normal 700 25px/12px var(--font);
 }
 
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter:brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
 /* end Project Area*/
+
+/* start About me Area*/
+
+.site-main .about-area .about-title p{
+    padding: 1rem 7rem;
+}
+.site-main .about-area .client{
+    background: hsla(0, 45%, 98%, 0.063);
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+.site-main .about-area .client-img{
+    padding: 2rem;
+}
+.site-main .about-area .client .about-client{
+    padding-top: 2rem;
+}
+.site-main .about-area .client .about-client h4{
+    font: normal 500 21px/20px var(--font);
+}
+.site-main .about-area .client .about-client p{
+    font-size: 14px;
+}
+.site-main .about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+/* end About me Area*/
+
+/* start Subscribe me Area*/
+
+.site-main .subscribe-us-area .subscribe{
+    background: url(../img/banner.jpg) no-repeat;
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/30px var(--font);
+    color: whitesmoke;
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: whitesmoke;
+    font: normal 500 17px/20px var(--font);
+}
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: black;
+    padding:.7rem 2rem;
+}
+/* end Subscribe me Area*/
