@@ -294,11 +294,11 @@
             <h1 class="text-uppercase title-h1">Quality Work</h1>
           </div>
           <div class="button-group">
-            <button type="button" class="acive">All</button>
-            <button type="button">Popular</button>
-            <button type="button">Latest</button>
-            <button type="button">Following</button>
-            <button type="button">Upcomming</button>
+            <button type="button" class="acive" id="btn1">All</button>
+            <button type="button" data-filter=".popular">Popular</button>
+            <button type="button" data-filter=".latest">Latest</button>
+            <button type="button" data-filter=".following">Following</button>
+            <button type="button" data-filter=".upcomming">Upcomming</button>
           </div>
 
           <div class="row grid">
@@ -324,14 +324,36 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item upcomming">
               <div class="our-project">
                 <div class="img">
                   <img src="../img/panic.png" alt="portfolio">
                 </div>
                 <div class="title py-4">
                   <h4 class="text-uppercase">Minimal Design</h4>
-                  <span class="text-secondary">Popular, Portfolio</span>
+                  <span class="text-secondary">Upcomming, Portfolio</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item upcomming">
+              <div class="our-project">
+                <div class="img">
+                  <img src="../img/logo_20.png" alt="portfolio">
+                </div>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">Minimal Design</h4>
+                  <span class="text-secondary">Upcomming, Portfolio</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+              <div class="our-project">
+                <div class="img">
+                  <img src="../img/logo_20.png" alt="portfolio">
+                </div>
+                <div class="title py-4">
+                  <h4 class="text-uppercase">Minimal Design</h4>
+                  <span class="text-secondary">Following, Portfolio</span>
                 </div>
               </div>
             </div>
@@ -348,5 +370,11 @@
 
     <!--Bootstrap js File-->
     <script src="../js/bootstrap.min.js"></script>
+
+    <!--Custom js File-->
+    <script src="../js/main.js"></script>
+
+    <!--isotope library js File-->
+    <script src="../vendor/isotope/isope.min.js"></script>
   </body>
 </html>
