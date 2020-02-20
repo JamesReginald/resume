@@ -26,7 +26,7 @@ let dots = []; // Every dots in an array
 /* ====== CONSTANTS ===== */
 /* ====================== */
 /* Some of those constants may change if the user resizes their screen but I still strongly believe they belong to the Constants part of the variables */
-const DOTS_AMOUNT = 1000; // Amount of dots on the screen
+const DOTS_AMOUNT = 100; // Amount of dots on the screen
 const DOT_RADIUS = 4; // Radius of the dots
 let GLOBE_RADIUS = width * 0.7; // Radius of the globe
 let GLOBE_CENTER_Z = -GLOBE_RADIUS; // Z value of the globe center
