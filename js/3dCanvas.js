@@ -3,7 +3,7 @@ console.clear();
 // Get the canvas element from the DOM
 const canvas = document.querySelector('#scene');
 
-canvas.width = canvas.clientWidth/2;
+canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 // Store the 2D context
 const ctx = canvas.getContext('2d');
@@ -17,7 +17,7 @@ if (window.devicePixelRatio > 1) {
 /* ====================== */
 /* ====== VARIABLES ===== */
 /* ====================== */
-let width = canvas.clientWidth/2; // Width of the canvas
+let width = canvas.clientWidth; // Width of the canvas
 let height = canvas.clientHeight; // Height of the canvas
 let rotation = 0; // Rotation of the globe
 let dots = []; // Every dots in an array
@@ -26,9 +26,9 @@ let dots = []; // Every dots in an array
 /* ====== CONSTANTS ===== */
 /* ====================== */
 /* Some of those constants may change if the user resizes their screen but I still strongly believe they belong to the Constants part of the variables */
-const DOTS_AMOUNT = 100; // Amount of dots on the screen
-const DOT_RADIUS = 4; // Radius of the dots
-let GLOBE_RADIUS = width * 0.7; // Radius of the globe
+const DOTS_AMOUNT = 1000; // Amount of dots on the screen
+const DOT_RADIUS = 10; // Radius of the dots
+let GLOBE_RADIUS = width * 10; // Radius of the globe
 let GLOBE_CENTER_Z = -GLOBE_RADIUS; // Z value of the globe center
 let PROJECTION_CENTER_X = width/2; // X center of the canvas HTML
 let PROJECTION_CENTER_Y = height / 2; // Y center of the canvas HTML
@@ -105,7 +105,7 @@ function render(a) {
 
 // Function called after the user resized its screen
 function afterResize () {
-  width = canvas.clientWidth/2;
+  width = canvas.clientWidth;
   height = canvas.clientHeight;
   if (window.devicePixelRatio > 1) {
     canvas.width = canvas.clientWidth * 2;
